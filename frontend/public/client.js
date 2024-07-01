@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let statusLeitura = false;
   
       try {
-        const response = await fetch('https://sistema-de-atendimento-pub-sub.onrender.com/api/tickets', {
+        const response = await fetch('https://sistema-de-atendimento.onrender.com/api/tickets', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

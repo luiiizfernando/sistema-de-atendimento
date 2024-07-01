@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const messageId = urlParams.get('messageId');
 
     try {
-        const response = await fetch(`https://sistema-de-atendimento-pub-sub.onrender.com/api/message/${messageId}`, {
+        const response = await fetch(`https://sistema-de-atendimento.onrender.com/api/message/${messageId}`, {
             method: 'GET',
             //credentials: 'include' // Para garantir que os cookies de sessão sejam enviados
         });
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const responseText = document.getElementById('response').value;
 
         try {
-            await fetch(`https://sistema-de-atendimento-pub-sub.onrender.com/${messageId}/respond`, {
+            await fetch(`https://sistema-de-atendimento.onrender.com/${messageId}/respond`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

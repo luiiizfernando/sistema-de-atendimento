@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
   try {
-      const response = await fetch('https://sistema-de-atendimento-pub-sub.onrender.com/api/messages', {
+      const response = await fetch('https://sistema-de-atendimento.onrender.com/api/messages', {
           method: 'GET',
           //credentials: 'include' // Para garantir que os cookies de sessão sejam enviados
       });
