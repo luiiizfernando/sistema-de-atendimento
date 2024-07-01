@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const messageId = urlParams.get('messageId');
 
     try {
-        const response = await fetch(`http://localhost:3000/api/message/${messageId}`, {
+        const response = await fetch(`https://sistema-de-atendimento-pub-sub.onrender.com/api/message/${messageId}`, {
             method: 'GET',
             //credentials: 'include' // Para garantir que os cookies de sessão sejam enviados
         });
