@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const responseText = document.getElementById('response').value;
 
         try {
-            await fetch(`https://sistema-de-atendimento-pub-sub.onrender.com${messageId}/respond`, {
+            await fetch(`https://sistema-de-atendimento-pub-sub.onrender.com/${messageId}/respond`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
