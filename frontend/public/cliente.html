@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cliente - Abrir Chamado</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Abrir Chamado</h1>
+  <form id="ticket-form">
+    <label for="title">Título:</label>
+    <input type="text" id="title" name="title" required>
+    
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="problemType">Tipo de Problema:</label>
+    <select id="problemType" name="problemType" required>
+      <option value="email">Email</option>
+      <option value="hardware">Hardware</option>
+      <option value="software">Software</option>
+    </select>
+    
+    <label for="description">Descrição:</label>
+    <textarea id="description" name="description" required></textarea>
+    
+    <button type="submit">Enviar</button>
+  </form>
+  <script src="client.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "description": "Frontend do sistema de atendimento",
+    "main": "index.js",
+    "scripts": {
+        "start": "lite-server"
+    },
+    "dependencies": {
+        "@google-cloud/pubsub": "^4.5.0",
+        "audit": "^0.0.6",
+        "express-session": "^1.18.0",
+        "fix": "^0.0.3",
+        "nodemailer": "^6.9.14"
+    },
+    "devDependencies": {
+        "lite-server": "^2.6.1"
+    }
+}
